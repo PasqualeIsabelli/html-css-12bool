@@ -1,0 +1,74 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green-one: #00c116;
+  --green-two: #57e567;
+  --green-three: #31bf3f;
+  --green-four: #b5ffbd;
+  --green-five: #00d815;
+  --green-six: #007f0e;
+  --green-seven: #009e0f;
+  --green-eight: #00e51a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+[class*="col-"] {
+  width: 100%;
+  height: 100px;
+}
+
+
+/*colori di background*/
+.white {
+  background-color: var(--white);
+}
+
+.black {
+  background-color: var(--black);
+}
+
+.green-one {
+  background-color: var(--green-one);
+}
+
+.green-two {
+  background-color: var(--green-two);
+}
+
+.green-three {
+  background-color: var(--green-three);
+}
+
+.green-four {
+  background-color: var(--green-four);
+}
+
+.green-five {
+  background-color: var(--green-five);
+}
+
+.green-six {
+  background-color: var(--green-six);
+}
+
+.green-seven {
+  background-color: var(--green-seven);
+}
+
+.green-eight {
+  background-color: var(--green-eight);
+}

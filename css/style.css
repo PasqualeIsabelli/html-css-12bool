@@ -40,7 +40,8 @@ section {
 /*proprietà per il testo*/
 [class*="col-"] {
   color: white;
-  text-align: center; /*aggiungere centratura del testo verticale*/
+  text-align: center;
+  line-height: 2rem;
 }
 
 /*selettore che fa riferimento alle col innestate*/
