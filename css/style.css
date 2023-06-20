@@ -1,0 +1,57 @@
+:root {
+  --bg-color: rgb(0, 119, 255);
+  --bg-green: rgb(58, 187, 46);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+SOLO per visualizzare le colonne vuote
+stili da eliminare in produzione
+*/
+.col,
+[class*="col-"] {
+  border: 1px solid white;
+  background-color: var(--bg-color);
+  min-height: 50px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.container {
+  font-size: 12px;
+}
+
+/*proprietà per il testo*/
+[class*="col-"] {
+  color: white;
+  text-align: center; /*aggiungere centratura del testo verticale*/
+}
+
+/*selettore che fa riferimento alle col innestate*/
+.col > .row, 
+[class*="col-"] > .row {
+  padding: 1rem;
+}
+
+.col > .row > .col,
+[class*="col-"] > .row > [class*="col-"] {
+  background-color: var(--bg-green);
+  border: 1px solid var(--bg-color);
+  padding: .5rem;
+}
